@@ -5,8 +5,8 @@ body {
 }
 
 .container {
-    width: 350px;
-    margin: 80px auto;
+    width: 380px;
+    margin: 60px auto;
     background: white;
     padding: 25px;
     border-radius: 10px;
@@ -14,25 +14,41 @@ body {
 }
 
 input {
-    width: 90%;
+    width: 95%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 button {
-    padding: 10px 20px;
-    background: #ff416c;
-    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
     border: none;
     cursor: pointer;
-    width: 95%;
+    background: #ff416c;
+    color: white;
 }
 
 button:hover {
     background: #e6365d;
 }
 
+.sos {
+    background: red;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+    font-size: 14px;
+}
+
 a {
-    color: #ff416c;
     text-decoration: none;
+    color: #ff416c;
 }
