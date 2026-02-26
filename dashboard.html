@@ -9,13 +9,27 @@
 <div class="container">
     <h2>Women Safety Dashboard</h2>
 
+    <button class="sos" onclick="sosAlert()">🚨 SOS EMERGENCY</button>
+
+    <hr>
+
     <h3>Add Emergency Contact</h3>
     <input type="text" id="contactName" placeholder="Contact Name">
     <input type="text" id="contactPhone" placeholder="Phone Number">
     <button onclick="addContact()">Add Contact</button>
 
+    <h4>Saved Contacts</h4>
+    <ul id="contactList"></ul>
+
+    <hr>
+
     <h3>Location Tracking</h3>
     <button onclick="sendLocation()">Send My Location</button>
+    <button onclick="startLiveTracking()">Start Live Tracking</button>
+    <button onclick="stopLiveTracking()">Stop Live Tracking</button>
+
+    <h4>Location History</h4>
+    <ul id="locationHistory"></ul>
 
     <br><br>
     <button onclick="logout()">Logout</button>
@@ -23,6 +37,5 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/app.js"></script>
-
 </body>
 </html>
